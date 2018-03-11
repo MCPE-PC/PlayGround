@@ -1,7 +1,7 @@
 #!/bin/sh
 KILL_LEVEL=0
 
-getopts "0123" OPT
+getopts "123" OPT
 case $OPT in
 	1)
 		$KILL_LEVEL=1
@@ -11,9 +11,6 @@ case $OPT in
 		;;
 	3)
 		$KILL_LEVEL=3
-		;;
-	\?)
-		exit 1
 		;;
 esac
 
